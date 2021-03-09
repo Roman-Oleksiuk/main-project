@@ -12,122 +12,125 @@
 <body>
     <!---Header section-->
     <header>
-        <div>
+        <div class="header_top_line">
             <ul>
                 <li>Open 8 am - 8 pm</li>
                 <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
                 <li><a href="mailto:christmasdecor@email.com">christmasdecor@email.com</a></li>
             </ul>
         </div>
-        <img src="project/img/header.svg"  width="100" height="100" alt="header-logo">
-        <nav>
-            <ul>
-                <li><a href="#">Bestsellers</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Decorations</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-            <div>                      
-                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
-            </div>
-        </nav>
+        <div class="header_bottom_line">
+            <img src="project/img/header.svg" alt="header-logo">
+            <nav>
+                <ul>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#about_us">About us</a></li>
+                    <li><a href="#shop">Decorations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <div>                      
+                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <!--First section-->
-        <section>
-            <div>
-                <p>Anything for happy holidays</p>
+        <section class="first_section">
+            <div class="first_section_block">
+                <span>Anything for happy holidays</span>
                 <h2>Christmas Decor.</h2>
-                <img src="project/img/symbol.svg"  width="200" height="50" alt="">
+                <img src="project/img/symbol.svg" alt="">
                 <p>We're all about Christmas decoration since 1998.</p>
                 <div>
-                    <button><a href="#">Shop now</a></button>
-                    <button>Contact us</button>
+                    <button class="fs_buttom_shop">Shop now</button>
+                    <button class="fs_buttom_lm">Learn more</button>
                 </div>
-            </section>
-        </div>
+            </div>    
+        </section>
         <!--Terms of purchase-->
-        <div>
-            <article>
-                <img src="project/img/truck.svg"  width="50" height="50" alt="">
+        <div class="terms_section">
+            <article class="term_article">
+                <img src="project/img/truck.svg"  alt="">
                 <h3>Next-day Delivery</h3>
-                <hr>
+                <div class="underscore"></div>
                 <p>We offer free next-day delivery to any American city for all orders over $90.</p>
             </article>
-            <article>
-                <img src="project/img/cash.svg"  width="50" height="50" alt="">
+            <article class="term_article">
+                <img src="project/img/cash.svg"  alt="">
                 <h3>100% Money back</h3>
-                <hr>
+                <div class="underscore"></div>
                 <p>If you won't like our product, return it to us in 14 days and get the full refund.</p>
             </article>
-            <article>
-                <img src="project/img/arrow-repeat.svg"  width="50" height="50" alt="">
+            <article class="term_article">
+                <img src="project/img/arrow-repeat.svg" alt="">
                 <h3>Warranty handling</h3>
-                <hr>
+                <div class="underscore"></div>
                 <p>If you find a defect in the product or a breakdown occurs, we will replace it.</p>
             </article>
-             <article>
-                <img src="project/img/credit-card.svg"  width="50" height="50" alt="">
+             <article class="term_article">
+                <img src="project/img/credit-card.svg"   alt="">
                 <h3>Payment methods</h3>
-                <hr>
+                <div class="underscore"></div>
                 <p>We accept cash, Visa and MasterCard, PayPal, and other payment methods.</p>
             </article>
         </div>
         <!--Special proposals-->
-        <div>
-            <div>
+        <div class="special_proposals">
+            <div class="first_sp">
                 <span>Buy 3 get 1 free</span>
                 <h2>All kinds of Tinsel Garlands.</h2>
-                <button><a href="#">Shop → </a></button>
+                <button>Shop →</button>
             </div>
-            <div>
+            <div class="second_sp">
                 <span>- 25% off</span>
                 <h2>All Glass Christmas baubles.</h2>
-                <button><a href="#">Shop → </a></button>
+                <button>Shop →</button>
             </div>
         </div>
         <!--Best choise section-->
-        <section>
-            <div>
+        <section id="bestsellers">
+            <div class="best_choise_head">
                 <span>Best choice</span>
                 <h2>Bestsellers.</h2>
                 <img src="project/img/symbol.svg"  width="200" height="50" alt="">
+                <p>Click on the image to see the product details and add it to cart by clicking the button.</p>
             </div>
             <div>
-                <article>
-                     <a href="#"> <img src="project/img/christmas_wreath_1.png"  width="100" height="100" alt=""></a>
-                     <h4><a href="#">Citrus Wreath</a></h4>
-                     <p>$89,00USD</p>
-                     <button><a href="#">Ad to card</a></button>
+                <article class="product_article">
+                     <a href="#"> <img  src="project/img/christmas_wreath_1.png" class="product_img" alt=""></a>
+                     <h4 class="product_name"><a href="#">Citrus Wreath</a></h4>
+                     <p class="product_price">$89,00USD</p>
+                     <button class="produtc_btn">Ad to card</button>
                 </article>
-                 <article >
-                     <a href="#"> <img src="project/img/snowman.png"  width="100" height="100" alt=""></a>
-                     <h4><a href="#">Snowman</a></h4>
-                     <p>$10,00USD</p>
-                     <button><a href="#">Ad to card</a></button>
+                 <article class="product_article">
+                     <a href="#"> <img src="project/img/snowman.png"  class="product_img" alt=""></a>
+                     <h4 class="product_name"><a href="#">Snowman</a></h4>
+                     <p class="product_price">$10,00USD</p>
+                     <button class="produtc_btn">Ad to card</button>
                 </article>
-                <article>
-                     <a href="#"> <img src="project/img/wreath_with_pine_ons.png"  width="100" height="100" alt=""></a>
-                     <h4><a href="#">Wreath With Pine Cons</a></h4>
-                     <p>$98,00USD</p>
-                     <button><a href="#">Ad to card</a></button>
+                <article class="product_article">
+                     <a href="#"> <img src="project/img/wreath_with_pine_ons.png"  class="product_img" alt=""></a>
+                     <h4 class="product_name"><a href="#">Wreath With Pine Cons</a></h4>
+                     <p class="product_price">$98,00USD</p>
+                     <button class="produtc_btn">Ad to card</button>
                 </article>
-                <article>
-                     <a href="#"> <img src="project/img/white_deer.png"  width="100" height="100" alt=""></a>
-                     <h4><a href="#">White Deer</a></h4>
-                     <p>$12,00USD</p>
-                     <button><a href="#">Ad to card</a></button>
+                <article class="product_article">
+                     <a href="#"> <img src="project/img/white_deer.png"  class="product_img" alt=""></a>
+                     <h4 class="product_name"><a href="#">White Deer</a></h4>
+                     <p class="product_price">$12,00USD</p>
+                     <button class="produtc_btn">Ad to card</button>
                 </article>
             </div>
         </section>  
         <!--About us section--> 
-        <section>
+        <section id="about_us">
             <div><img src="project/img/about_us.png" alt=""></div>
-            <div>
-                <div>
+            <div class="about_us">
+                <div class="about_us_text">
                     <span>About Us</span>
                     <h2>All Kinds of X-mas Decorations.</h2>
                     <img src="project/img/symbol.svg"  width="200" height="50" alt="">
@@ -136,19 +139,19 @@
                 </div>
                 <div>
                     <div>
-                    <img src="project/img/homes.svg" alt="">
+                    <img src="project/img/homes.svg" class="slide_gallery" alt="">
                     </div>
                     <div>
-                    <img src="project/img/home_interiors.svg" alt="">
+                    <img src="project/img/home_interiors.svg" class="slide_gallery" alt="">
                     </div>
                      <div>
-                    <img src="/project/img/hallmark.svg" alt="">
+                    <img src="/project/img/hallmark.svg" class="slide_gallery" alt="">
                     </div>
                     <div>
-                    <img src="project/img/irvins.svg" alt="">
+                    <img src="project/img/irvins.svg" class="slide_gallery" alt="">
                     </div>
                     <div>
-                    <img src="project/img/home_shoping.svg" alt="">
+                    <img src="project/img/home_shoping.svg" class="slide_gallery" alt="">
                     </div>
                 </div>
             </div>
@@ -156,8 +159,8 @@
         </section>
 
         <!--Testimonials section--> 
-        <section>
-            <div>
+        <section class="testimonials">
+            <div class="testimonials_head">
                 <span>Testimonials</span>
                 <h2>Our Happy Clients.</h2>
                 <img src="project/img/symbol.svg"  width="200" height="50" alt="">
@@ -194,14 +197,14 @@
                 <img src="project/img/symbol.svg"  width="200" height="50" alt="">
                 <p>The discount is applied on all purchases made in our online store until December, 22.</p>
                 <div>
-                    <button><a href="#">Shop now</a></button>
-                    <button><a href="project/contact.html">Contact us</a></button>
+                    <a href="#">Shop now</a>
+                    <a href="project/contact.html">Contact us</a>
                 </div>
             </div>
         </section>
 
         <!--Shop section--> 
-        <div>
+        <div id="shop">
             <div>
                 <span>Shop</span>
                 <h3>Decorations.</h3>
@@ -218,25 +221,25 @@
                         <img src="project/img/shop/redboot.png" alt="red boot">
                         <h4> <a href="#">Red Boot</a></h4>
                         <span>$18,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                      <div>
                         <img src="project/img/shop/whitedeer.png" alt="white deer">
                         <h4> <a href="#">White Deer</a></h4>
                         <span>$12,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/giftbox.png" alt="gift box">
                         <h4> <a href="#">Gift Box</a></h4>
                         <span>$12,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/snowman.png" alt="snowman">
                         <h4> <a href="#">Snowman</a></h4>
                         <span>$10,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                 </div>
                 <div id="wreaths">
@@ -244,75 +247,75 @@
                         <img src="project/img/shop/el_wreath.png" alt="Elegant Wreath">
                         <h4> <a href="#">Elegant Wreath</a></h4>
                         <span>$78,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                      <div>
                         <img src="project/img/shop/wreath_wpc.png" alt="Wreath With Pine Cons">
                         <h4> <a href="#">Wreath With Pine Cons</a></h4>
                         <span>$98,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/cin_wreath.png" alt="Cinnamon Wreath">
                         <h4> <a href="#">Cinnamon Wreath</a></h4>
                         <span>$95,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/cit_wreath.png" alt="Citrus Wreath">
                         <h4> <a href="#">Citrus Wreath</a></h4>
                         <span>$95,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div id="christmas_balls">
                     <div>
                         <img src="project/img/shop/redballs.png" alt="Red Christmas Balls">
                         <h4> <a href="#">Red Christmas Balls</a></h4>
                         <span>$20,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                      <div>
                         <img src="project/img/shop/silverballs.png" alt="Silver Christmas Balls">
                         <h4> <a href="#">Silver Christmas Balls</a></h4>
                         <span>$10,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/greenballs.png" alt="Green Christmas Balls">
                         <h4> <a href="#">Green Christmas Balls</a></h4>
                         <span>$10,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/goldballs.png" alt="Gold Christmas Balls">
                         <h4> <a href="#">Gold Christmas Balls</a></h4>
                         <span>$10,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                      <div id="stockings">
                     <div>
                         <img src="project/img/shop/sc_stocing.png" alt="Santa Claus Stocking">
                         <h4> <a href="#">Santa Claus Stocking</a></h4>
                         <span>$15,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                      <div>
                         <img src="project/img/shop/cr_stocing.png" alt="Christmas Red Stocking">
                         <h4> <a href="#">Christmas Red Stocking</a></h4>
                         <span>$22,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/sw_stocing.png" alt="Stocking With Pompons">
                         <h4> <a href="#">Stocking With Pompons</a></h4>
                         <span>$22,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                     <div>
                         <img src="project/img/shop/stocing_wb.png" alt="Stocking With Balls">
                         <h4> <a href="#">Stocking With Balls</a></h4>
                         <span>$18,00USD</span>
-                        <button><a href="#">Ad to card</a></button>
+                        <button>Ad to card</button>
                     </div>
                 </div>
             </div>
@@ -352,12 +355,12 @@
     <section>
         <span>Contact us</span>
         <h2>Fill out the Form or <br>
-         Call Us at <a href="tel:+12345678900">+1 (234) 567 89 00</a></h2>
-         <button><a href="project/contact.html">Contact us</a></button>
+        Call Us at <a href="tel:+12345678900">+1 (234) 567 89 00</a></h2>
+        <a href="project/contact.html">Contact us</a>
 
     </section>
     <!--FAQ section--> 
-     <section>
+     <section id="faq">
          <div>
              <span>FAQ</span>
              <h2>Frequently Asked Questions.</h2>
@@ -423,7 +426,7 @@
 
     </div>
 
-    <footer>
+    <footer id="contacts">
         <div>
            <img src="project/img/header.svg"  width="100" height="100" alt="header-logo"> 
            <p>At Christmas Decorations Shop, we collect and sell everything connected with the festive season, from tree decorations to clothing and Christmas cards.</p>
