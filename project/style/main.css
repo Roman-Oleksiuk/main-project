@@ -68,7 +68,7 @@
 /* First section */
 
 .first_section{
-    background-image: url(/project/img/bgi_main.png);
+    background-image: url(../img/bgi_main.png);
 }
 .first_section_block{
     background-color: #ffffff;
@@ -164,7 +164,7 @@
 }
 
 .first_sp{
-    background-image: url(/project/img/bgi_2.png);
+    background-image: url(../img/bgi_2.png);
     background-size: cover;
     width: 570px;
     height: 325px;
@@ -195,7 +195,7 @@
 }
 
 .second_sp{
-    background-image: url(/project/img/bgi_1.png);
+    background-image: url(../img/bgi_1.png);
     background-size: cover;
     width: 570px;
     height: 325px;
