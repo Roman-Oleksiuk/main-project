@@ -350,3 +350,124 @@
     font-size: 18px;
     color: #4f4f4f;
 }
+
+.testimonials_article{
+    width: 585px;
+    height: 550px;
+    background-color: #ffffff;
+
+}
+
+.testimonials_article img{
+    width: 555px;
+    height: 355px;
+}
+
+.testimonials_article h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #bb2528;
+}
+
+.testimonials_article p{
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 16px;
+   color: #737373;
+}
+
+.testimonials_article em{
+   font-family: 'PT Sans', sans-serif;
+   font-size: 14px;
+   color: #4f4f4f;
+}
+
+.testimonials_underscore{
+    width: 45px;
+    height: 3px;
+    background-color: #f9f4ee;
+}
+
+/* Special offer section */
+.special_offer{
+    background-image: url(../img/bgi_3.png);
+}
+
+.special_offer_text{
+    width: 570px;
+    height: 510px;
+    background-color: #ffffff;
+    
+}
+
+.special_offer_text span{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 22px;
+    color: #bb2528;
+}
+
+.special_offer_text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #232323;
+}
+
+.special_offer_text img{
+    width: 100px;
+    height: 32px;
+}
+
+.special_offer_text p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.so_buttom_cu{
+    width: 125px;
+    height: 40px;
+    background-color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #232323;
+    border-style: solid;
+    text-decoration: none;
+}
+/* Shop section */
+.shop_head{
+    background-color: #ffffff;
+}
+
+.shop_head span{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 22px;
+    color: #bb2528;
+}
+
+.shop_head h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #232323;
+
+}
+
+.shop_head img{
+    width: 100px;
+    height: 32px;
+}
+.shop_head p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+
+.shop_title_btn{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #4f4f4f;
+    border: none;
+    background-color: transparent;
+}
+
+/* About decoration section */
