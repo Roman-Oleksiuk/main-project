@@ -1,81 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Grand+Hotel&family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 990px;
+    margin: auto;
+}
+
+
+
 /* Header  */
 
 .header_top_line {
     height: 45px;
     background-color: hsl(359, 67%, 44%);
-
+    display: none;
 }
-.header_top_line ul {
+
+.header_bottom_line {
+    background-color: 	hsl(0, 0%, 100%);
+    padding: 25px;
     
 }
 
-.header_top_line ul li {
-    list-style-type: none;
-    display: inline-block;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
-    color: 	hsl(0, 0%, 100%);
-}
-
-.header_top_line ul li a {
-    color: 	hsl(0, 0%, 100%);
-    text-decoration: none;
-}
-
-.header_bottom_line{
-    background-color: 	hsl(0, 0%, 100%);
-}
 .header_bottom_line img{
     width: 96px;
     height: 70px;
-}
-
-.header_bottom_line  nav ul li {
-    list-style-type: none;
     
-}
-.header_bottom_line  nav ul li a {
-    text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
-    color: hsl(359, 67%, 44%);
-}
-.fa{
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    border-style: solid ;
-}
+ }
 
-.fa-facebook {
-  background: 	hsl(0, 0%, 100%);
-  color: hsl(359, 67%, 44%);
-}
+ .header_nav {
+     display: none;
+ }
 
-.fa-instagram {
-  background: 	hsl(0, 0%, 100%);
-  color: hsl(359, 67%, 44%);
-}
-
-.fa-youtube {
-  background: 	hsl(0, 0%, 100%);
-  color: hsl(359, 67%, 44%);
-}
 
 /* First section */
 
 .first_section{
     background-image: url(../img/bgi_main.png);
+    background-size: cover;
+    background-position: center;
+    padding: 110px 25px ;
 }
 .first_section_block {
     background-color: 	hsl(0, 0%, 100%);
-    width: 570px;
-    height: 400px;
-
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
 }
+
 .first_section_block span{
     font-family: 'Grand Hotel', cursive;
     font-size: 22px;
@@ -84,13 +62,13 @@
 
 .first_section_block h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 56px;
+    font-size: 52px;
     font-weight: 700;
     color: hsl(0, 0%, 14%);
 }
 .first_section_block img {
     height: 32px;
-    width: 470;
+    width: 150px;
 }
 
 .first_section_block p {
@@ -98,6 +76,7 @@
     font-size: 18px;
     color: 	hsl(0, 0%, 31%);
 }
+
 
 .fs_buttom_shop {
      width: 90px;
@@ -107,6 +86,18 @@
      font-size: 12px;
      font-weight: 700;
      color: hsl(0, 0%, 100%);
+     margin: 10px;
+}
+
+.fs_buttom_shop:hover {
+    width: 90px;
+    height: 40px;
+    background-color: hsl(0, 0%, 14%);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 10px;
 }
 
 .fs_buttom_lm {
@@ -118,25 +109,43 @@
      font-weight: 700;
      color: hsl(0, 0%, 14%);
      border-style: solid;
-
+     margin: 10px;
 }
+.fs_buttom_lm:hover {
+    width: 125px;
+    height: 40px;
+    background-color: hsl(0, 0%, 14%);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    border-style: solid;
+    margin: 10px;
+}
+
+
 
 /* Terms of purchase */
 
 .terms_section {
     background-color: 	hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    margin: 35px 25px;
 }
 
 .term_article {
      background-color: 	hsl(0, 0%, 100%);
-     width: 270px;
-     height: 230px;
+     width: 95%;
+     margin: 15px 0px;
 }
 
 .term_article img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: hsl(33, 48%, 95%);
+    padding: 25px;
+    border-radius: 50%;
 }
 
 .term_article h3 {
@@ -146,9 +155,10 @@
     font-weight: 400;
 }
 .underscore {
-    width: 32px;
+    width: 15%;
     height: 3px;
     background-color: hsl(359, 67%, 44%);
+    margin: 10px 0px;
 }
 
 .term_article p {
@@ -160,14 +170,19 @@
 /* Special proposals */
 .special_proposals {
     background-color: 	hsl(0, 0%, 100%);
-
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    margin: 35px 25px;
 }
 
 .first_sp {
     background-image: url(../img/bgi_2.png);
     background-size: cover;
-    width: 570px;
-    height: 325px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
 
 .first_sp span { 
@@ -191,14 +206,23 @@
     border-style: solid;
     border-color: 	hsl(0, 0%, 100%);
     background-color: transparent;
-
+    margin: 15px 0px;
 }
+
+.first_sp button:hover {
+    color: hsl(0, 0%, 14%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
 
 .second_sp {
     background-image: url(../img/bgi_1.png);
     background-size: cover;
-    width: 570px;
-    height: 325px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
 
 .second_sp span {
@@ -222,7 +246,14 @@
     border-style: solid;
     border-color: 	hsl(0, 0%, 100%);
     background-color: transparent;
+    margin: 15px 0px;
 }
+
+.second_sp button:hover{
+    color: hsl(0, 0%, 14%);
+    background-color: hsl(0, 0%, 100%);   
+}
+
 
 /* Best choise section */
 
@@ -678,3 +709,181 @@ list-style-type: none;
     background:hsl(359, 67%, 44%);
     color: hsl(0, 0%, 100%);   
 }    
+
+
+
+/* responsive */
+
+@media (min-width: 761px) {
+    /* first section */
+    .first_section{
+        padding: 110px auto 110px 25px  ;
+    }
+    .first_section_block{
+        max-width: 440px;
+    }
+
+    /* Terms of purchase */
+    .terms_section {
+        background-color: 	hsl(0, 0%, 100%);
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        margin: 35px 25px;
+    }
+
+    /* Special proposals */
+    .special_proposals {
+        background-color: 	hsl(0, 0%, 100%);
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        margin: 35px 25px;
+    }
+
+
+
+}
+
+
+@media (min-width: 990px) {
+    /* Header  */
+
+    .header_top_line {
+        height: 45px;
+        background-color: hsl(359, 67%, 44%);
+        display: flex;
+        margin: 0px;
+        align-items: center;
+
+    } 
+
+    .header_top_line ul {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+
+    .header_top_line ul li {
+        list-style-type: none;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        color: 	hsl(0, 0%, 100%);
+        
+                       
+    }
+    
+    .header_top_line ul li a {
+        color: 	hsl(0, 0%, 100%);
+        text-decoration: none;
+        
+    }
+
+    .header_top_line ul li a:hover {
+        color: 	hsl(0, 0%, 100%);
+        text-decoration: underline;
+    }
+
+    .header_bottom_line{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header_nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .header_nav ul  li {
+        list-style-type: none;
+        margin:  auto 20px;
+    }
+
+    .header_nav ul  li a {
+        text-decoration: none;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        color: hsl(0, 0%, 14%);
+        transition: all 0.5s ease-in;
+    }
+
+    .header_nav ul  li a:hover {
+        text-decoration: underline;
+        color: hsl(359, 67%, 44%);
+    }
+
+    .header_sn{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+     
+    }
+
+    .fa {
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        border-style: solid ;
+    }
+
+    .fa-facebook {
+        background: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 14%);
+
+    }
+
+    .fa-facebook:hover{
+        background: hsl(0, 0%, 14%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .fa-instagram {
+        background: 	hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 14%);
+    }
+    .fa-instagram:hover {
+        background: hsl(0, 0%, 14%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .fa-youtube {
+        background: 	hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 14%);
+    }
+
+     .fa-youtube:hover {
+        background: hsl(0, 0%, 14%);
+        color: hsl(0, 0%, 100%); 
+     }
+
+     /* first section */
+
+     /* Terms of purchase */
+    .terms_section {
+        background-color: 	hsl(0, 0%, 100%);
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 35px 25px;
+    }
+
+   
+
+
+
+
+
+
+  
+
+}  
+   
+   
