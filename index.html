@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resource/style/index.css">
     <link rel="icon" href="resource/img/site_title.png">
+    <link rel="stylesheet" href="resource/style/header_modal.css">
    
 </head>
 <body>
@@ -21,6 +22,8 @@
         </div>
         <div class="header_bottom_line">
             <img src="resource/img/header.svg" alt="header-logo">
+            <!-- Trigger/Open The Modal -->
+            <button id="modalBtn">&#926</button>
             <nav class="header_nav">
                 <ul>
                     <li><a href="#bestsellers">Bestsellers</a></li>
@@ -35,6 +38,33 @@
                     <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
                 </div>
             </nav>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal_header">
+                    <img src="resource/img/header.svg" alt="header-logo">
+                    <span class="close">&#215;</span>
+                </div>
+                <ul>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#about_us">About us</a></li>
+                    <li><a href="#shop">Decorations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li>Open 8 am - 8 pm</li>
+                    <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
+                    <li><a href="mailto:christmasdecor@email.com">christmasdecor@email.com</a></li>
+                </ul>
+                <div class="modal_sn">                      
+                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                </div>
+
+            </div>
+
         </div>
     </header>
     <main>
@@ -92,7 +122,7 @@
             </div>
         </div>
         <!--Best choise section-->
-        <section id="bestsellers">
+        <!-- <section id="bestsellers">
             <div class="best_choise_head">
                 <span>Best choice</span>
                 <h2>Bestsellers.</h2>
@@ -125,9 +155,9 @@
                      <button class="produtc_btn">Ad to card</button>
                 </article>
             </div>
-        </section>  
+        </section>   -->
         <!--About us section--> 
-        <section id="about_us">
+        <!-- <section id="about_us">
             <div><img src="resource/img/about_us.png" alt=""></div>
             <div class="about_us">
                 <div class="about_us_text">
@@ -156,10 +186,10 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!--Testimonials section--> 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
             <div class="testimonials_head">
                 <span>Testimonials</span>
                 <h2>Our Happy Clients.</h2>
@@ -187,10 +217,10 @@
                 <p>“The anticipation of Christmas is the best thing in December. I like the feeling that magic is coming and try to start Christmas decorations in early December. This year, I've bought a new X-mas tree and lots of baubles.”</p>
                 <em>December 02, 2020</em>
             </article>
-        </section>
+        </section> -->
 
         <!--Special offer section--> 
-        <section class="special_offer">
+        <!-- <section class="special_offer">
             <div class="special_offer_text">
                 <span>Special offer</span>
                 <h2>Get -15% Discount on All Decorations.</h2>
@@ -201,10 +231,10 @@
                     <button class="so_buttom_cu">Contact us</button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Shop section--> 
-        <div id="shop">
+        <!-- <div id="shop">
             <div class="shop_head">
                 <span>Shop</span>
                 <h3>Decorations.</h3>
@@ -321,9 +351,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--About decoration section-->
-        <section class="about_decoration_section">
+        <!-- <section class="about_decoration_section">
             <div class="about_decoration_aside">
                 <span class="title_kind">DECORATION</span>
                 <h3>How to Store and Clean Christmas Balls</h3>
@@ -350,18 +380,18 @@
                 <p>Christmas holidays are not only about decorations but also about buying presents literally for everyone. If you're going to celebrate with your family and/or friends, you'd better hurry up and start making up lists of presents. And yes, it's possible to buy everything in one place.</p>
                 <div class="signature">December 05, 2020 | by Helen White</div>
             </article>
-        </section>
+        </section> -->
      
     </main>
     <!--Contact us section--> 
-    <section class="contact_section">
+    <!-- <section class="contact_section">
         <span>Contact us</span>
         <h2>Fill out the Form or <br>
         Call Us at <a href="tel:+12345678900">+1 (234) 567 89 00</a></h2>
         <button class="contact_us_btn">Contact us</button>
-    </section>
+    </section> -->
     <!--FAQ section--> 
-     <section id="faq">
+    <section id="faq">
          <div class="faq_head">
              <span>FAQ</span>
              <h2>Frequently Asked Questions.</h2>
@@ -471,5 +501,6 @@
             </div>
         </div>
     </footer>
+    <script src="resource/js/header_modal.js"></script>
 </body>
 </html>
