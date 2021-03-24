@@ -1,14 +1,10 @@
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("modalBtn");
-const span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-  }
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
 
-span.onclick = function() {
-    modal.style.display = "none";
-  }
-
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
 
 
 

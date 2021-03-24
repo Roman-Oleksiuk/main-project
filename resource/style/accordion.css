@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Grand+Hotel&family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+#faq {
+    padding: 25px;
+}
+
+
+.faq_head span {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 22px;
+    color: hsl(359, 67%, 44%);
+
+}
+
+
+.faq_head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: hsl(0, 0%, 14%);
+       
+}
+
+
+
+
+.faq_head img {
+    width: 100px;
+    height: 32px;
+}
+
+.faq_head p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(0, 0%, 31%);
+}
+
+
+.accordion_section{
+    margin-top: 35px;
+}
+
+.acordion_article{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: hsl(0, 0%, 31%);
+}
+
+.accordion {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: hsl(0, 0%, 31%);
+    cursor: pointer;
+    
+    text-align: left;
+    transition: 0.4s;
+    margin: 10px;
+    width: 50%;
+  }
+
+  
+  .accordion:after {
+    content: '\002B';
+    height: 35px;
+    
+    font-weight: bold;
+    position: absolute;
+    right: ;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+@media (min-width: 761px){
+    .accordion_section{
+        
+    }
+}
+
+
+@media (min-width: 990px){
+
+}

@@ -41,6 +41,7 @@
     position: absolute;
     top: 35px;
     right: 30px;
+    text-decoration: none;
 }
 
 .close:hover{

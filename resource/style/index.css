@@ -593,37 +593,6 @@ body {
 
 /* FAQ section */
    
-.faq_head span {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 22px;
-    color: hsl(359, 67%, 44%);
-
-}
-
-
-.faq_head h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    color: hsl(0, 0%, 14%);
-       
-}
-
-.faq_head img {
-    width: 100px;
-    height: 32px;
-}
-
-.faq_head p {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
-    color: hsl(0, 0%, 31%);
-}
-
-.acordion_article{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-    color: hsl(0, 0%, 31%);
-}
 
 /* Gallery */
 
