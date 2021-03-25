@@ -317,41 +317,6 @@ body {
 
 }
 
-/* About us section */
-.about_us {
-    background-color: hsl(33, 48%, 95%);
-
-}
-
-.about_us_text span {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 22px;
-    color: hsl(359, 67%, 44%);
-
-}
-
-.about_us_text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 56px;
-    color: hsl(0, 0%, 14%);
-
-}
-
-.about_us_text img {
-    height: 32px;
-    width: 120px;
-}
-
-.about_us_text p {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
-    color: 	hsl(0, 0%, 31%);
-}
-
-.slide_gallery {
-    width: 145px;
-    height: 135px;
-}
 
 /* Testimonials section */
 .testimonials {

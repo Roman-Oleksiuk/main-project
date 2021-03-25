@@ -41,33 +41,34 @@
     margin-top: 35px;
 }
 
-.acordion_article{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-    color: hsl(0, 0%, 31%);
+.accordion_cont{
+    border-bottom: 1px solid   hsl(0, 0%, 65%);
 }
+
+
 
 .accordion {
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
     color: hsl(0, 0%, 31%);
     cursor: pointer;
-    
-    text-align: left;
+    outline: none;
     transition: 0.4s;
-    margin: 10px;
-    width: 50%;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    
   }
 
   
   .accordion:after {
     content: '\002B';
-    height: 35px;
-    
+    font-size: 20px;
     font-weight: bold;
-    position: absolute;
-    right: ;
-    margin-left: 5px;
+    margin-left: 75px;
   }
   
   .active:after {
@@ -75,23 +76,22 @@
   }
   
   .panel {
-    padding: 0 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 31%) ;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
-
-
-
-
-
-
-
-
 
 @media (min-width: 761px){
     .accordion_section{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
         
     }
 }
