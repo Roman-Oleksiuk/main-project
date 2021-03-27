@@ -2,8 +2,20 @@
 
 
 /* About us section */
-.about_us {
+
+.aboutus_title{
+    background-image: url(../img/about_us.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+
+
+.about_us_tc {
     background-color: hsl(33, 48%, 95%);
+    padding: 25px;
 
 }
 
@@ -35,4 +47,37 @@
 .slide_gallery {
     width: 145px;
     height: 135px;
+}
+
+.aboutus_carousel{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.carousel .aboutus_carousel img{
+    width: 100%;
+}
+
+@media (min-width: 761px){
+    #about_us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutus_title{
+        height: 100%;
+    }
+
+    .carousel .aboutus_carousel img{
+        width: 55%;
+    }
+
+
+
+}
+
+@media (min-width: 990px){
+    .carousel .aboutus_carousel img{
+        width: 30%;
+    }
 }

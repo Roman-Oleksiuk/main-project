@@ -11,6 +11,7 @@
     top: 40px;
     right: 30px;
     color: hsl(0, 0%, 14%);
+    cursor: pointer;
 }
 
 .modal{
@@ -42,6 +43,8 @@
     top: 35px;
     right: 30px;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 .close:hover{
