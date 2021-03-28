@@ -1,9 +1,9 @@
 function openNav() {
-  document.getElementById("myNav").style.display = "block";
+  document.getElementById("mainNav").style.display = "block";
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.display = "none";
+  document.getElementById("mainNav").style.display = "none";
 }
 
 

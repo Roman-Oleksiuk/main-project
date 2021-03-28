@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="resource/style/accordion.css">
     <link rel="stylesheet" href="resource/style/aboutus.css">
     <link rel="stylesheet" href="resource/style/gallery.css">
+    <link rel="stylesheet" href="resource/style/best_choise.css">
+    <link rel="stylesheet" href="resource/style/shop_section.css">
    
 </head>
 <body>
@@ -125,40 +127,15 @@
             </div>
         </div>
         <!--Best choise section-->
-        <!-- <section id="bestsellers">
+        <section id="bestsellers">
             <div class="best_choise_head">
                 <span>Best choice</span>
                 <h2>Bestsellers.</h2>
                 <img src="resource/img/symbol.svg"  width="200" height="50" alt="">
                 <p>Click on the image to see the product details and add it to cart by clicking the button.</p>
             </div>
-            <div>
-                <article class="product_article">
-                     <a href="#"> <img  src="resource/img/christmas_wreath_1.png" class="product_img" alt=""></a>
-                     <h4 class="product_name"><a href="#">Citrus Wreath</a></h4>
-                     <p class="product_price">$89,00USD</p>
-                     <button class="produtc_btn">Ad to card</button>
-                </article>
-                 <article class="product_article">
-                     <a href="#"> <img src="resource/img/snowman.png"  class="product_img" alt=""></a>
-                     <h4 class="product_name"><a href="#">Snowman</a></h4>
-                     <p class="product_price">$10,00USD</p>
-                     <button class="produtc_btn">Ad to card</button>
-                </article>
-                <article class="product_article">
-                     <a href="#"> <img src="resource/img/wreath_with_pine_ons.png"  class="product_img" alt=""></a>
-                     <h4 class="product_name"><a href="#">Wreath With Pine Cons</a></h4>
-                     <p class="product_price">$98,00USD</p>
-                     <button class="produtc_btn">Ad to card</button>
-                </article>
-                <article class="product_article">
-                     <a href="#"> <img src="resource/img/white_deer.png"  class="product_img" alt=""></a>
-                     <h4 class="product_name"><a href="#">White Deer</a></h4>
-                     <p class="product_price">$12,00USD</p>
-                     <button class="produtc_btn">Ad to card</button>
-                </article>
-            </div>
-        </section>   -->
+            <div class="best_choise_products"></div>
+        </section>  
         <!--About us section--> 
         <section id="about_us">
             <div class="aboutus_title"></div>
@@ -229,19 +206,42 @@
         </section> -->
 
         <!--Shop section--> 
-        <!-- <div id="shop">
+        <div id="shop">
             <div class="shop_head">
                 <span>Shop</span>
                 <h3>Decorations.</h3>
                 <img src="resource/img/symbol.svg"  width="200" height="50" alt="">
                 <p>Click on the image to see the product details and add it to cart by clicking the button.</p>
             </div>
-            <div>
-                <button class="shop_title_btn">Interior</button>
-                <button class="shop_title_btn">Wreaths</button>
-                <button class="shop_title_btn">Christmas Balls</button>
-                <button class="shop_title_btn">Stockings</button>
-                <div id="interior">
+            <div class="shop_tab">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">Interior</label>
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">Wreaths</label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">Christmas Balls</label>
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4">Stockings</label>
+                <div  id="content1" class="tab_content">
+                    <div class="interior_products">scscsc</div>
+                </div>
+                <div  id="content1" class="tab_content">
+                    <div class="wreaths_products">scsc</div>
+                </div>
+                <div  id="content1" class="tab_content">
+                    <div class="christmas_balls_products">scsc</div>
+                </div>
+                <div  id="content1" class="tab_content">
+                    <div class="stockings_products">scsc</div>
+                </div>
+                <!-- <div  class="interior_products"> hscbhsbcdh</div>
+                <div  class="wreaths_products">sdcsdcsdc</div>
+                <div  class="christmas_balls_products">sdcsdcsdc</div>
+                <div  class="stockings_products">sdcsdc</div> -->
+
+
+                
+                <!-- <div id="interior">
                     <div class="product_article">
                         <a href="#"><img src="resource/img/shop/redboot.png" class="product_img" alt="red boot"></a>
                         <h4 class="product_name"> <a href="#">Red Boot</a></h4>
@@ -342,11 +342,11 @@
                         <a href="#"><img src="resource/img/shop/stocing_wb.png" class="product_img" alt="Stocking With Balls"></a>
                         <h4 class="product_name"><a href="#">Stocking With Balls</a></h4>
                         <p class="product_price">$18,00USD</p>
-                        <button class="produtc_btn">Ad to card</button>
-                    </div>
-                </div>
+                        <button class="produtc_btn">Ad to card</button> -->
+                    <!-- </div>
+                </div> --> 
             </div>
-        </div> -->
+        </div>
         <!--About decoration section-->
         <!-- <section class="about_decoration_section">
             <div class="about_decoration_aside">
@@ -447,29 +447,46 @@
     </section>
 
     <!--Gallery section-->
-    <div>
-        <span>&#139</span>
-        <span>&#155</span>
-        <div>
-            <img src="resource/img/gallery/gallery_img_1.png"  class="gallery_img" alt="">
-        </div>
-         <div>
-            <img src="resource/img/gallery/gallery_img_2.png" class="gallery_img" alt="">
-        </div>
-        <div>
-            <img src="resource/img/gallery/gallery_img_3.png" class="gallery_img" alt="">
-        </div>
-        <div>
-            <img src="resource/img/gallery/gallery_img_4.png" class="gallery_img" alt="">
-        </div>
-        <div>
-            <img src="resource/img/gallery/gallery_img_5.png" class="gallery_img" alt="">
-        </div>
-        <div>
-            <img src="resource/img/gallery/gallery_img_6.png" class="gallery_img" alt="">
-        </div>
+   
+    <div id="wrapper">
+        <div id="carousel">
+          <div id="content">
+            <img class="item" src="resource/img/gallery/gallery_img_1.png">
+            
+            <img src="resource/img/gallery/gallery_img_2.png" class="item" alt="">
 
-    </div>
+            <img src="resource/img/gallery/gallery_img_3.png" class="item" alt="">
+            
+            <img src="resource/img/gallery/gallery_img_4.png" class="item" alt="">
+
+            <img src="resource/img/gallery/gallery_img_5.png" class="item" alt="">
+
+            <img src="resource/img/gallery/gallery_img_6.png" class="item">
+          </div>
+        </div>
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
+      </div>
 
     <footer id="contacts">
         
@@ -521,5 +538,7 @@
     <script src="resource/js/accordion.js"></script>
     <script src="resource/js/aboutus.js"></script>
     <script src="resource/js/gallery.js"></script>
+    <script src="resource/js/best_choise.js"></script>
+    <!-- <script src="resource/js/shop_section.js"></script> -->
 </body>
 </html>

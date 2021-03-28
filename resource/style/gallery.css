@@ -1,6 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Grand+Hotel&family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
 
 
+#wrapper {
+    width: 100%;
+    max-width: 991px;
+    position: relative;
+  }
+  
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: hsl(359, 67%, 44%);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 350px;
+    height: 350px;
+   
+  }
 
 
 
@@ -15,7 +70,12 @@
 
 
 @media (min-width: 761px){
-   
+    .item {
+        width: 350px;
+        height: 220px;
+       
+      }
+
 
 
 
@@ -23,4 +83,4 @@
 
 @media (min-width: 990px){
     
-}
+} 

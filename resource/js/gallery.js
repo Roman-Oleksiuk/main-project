@@ -1,39 +1,29 @@
-let span = document.getElementsByTagName('');
-let product = document.getElementsByClassName('');
-let product_page = Math.ceil(product.length/4);
-let l =0;
-let movePer = 25.34;
-let maxMove = 203;
 
-// Mobile viev
 
-let mobile_view = window.matchMedia("(max-width: 768px)");
-if (mobile_view.matches)
-{
-    movePer = 50.36;
-    maxMove = 504;
-}
+const gap = 0;
+const carousel = document.getElementById("carousel"),
+  content = document.getElementById("content"),
+  nextg = document.getElementById("next"),
+  prevg = document.getElementById("prev");
 
-let right_mover = ()=>{
-    l = l + movePer;
-    if(product == 1) {l =0}
-    for(const i of product)
-    {
-        if (l > maxMove) {l = l - movePer;}
-        i.style.left = '-' + l + '%';
-    }
-}
+nextg.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prevg.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    nextg.style.display = "none";
+  }
+});
+prevg.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+    prevg.style.display = "none";
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    nextg.style.display = "flex";
+  }
+});
 
-let left_mover = ()=>{
-    l = l - movePer;
-    if (l<=0) {l=0;}
-    for(const i of product)
-    {
-        if (product_page > 1)
-        i.style.left = '-' + l + '%';
-    }
-    
-}
-
-span[1].onclick = ()=>{right_mover();}
-span[0].onclick = ()=>{right_mover();}
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));

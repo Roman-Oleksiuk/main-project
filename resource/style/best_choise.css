@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Grand+Hotel&family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* Best choise section */
+
+#bestsellers{
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.best_choise_head span {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 22px;
+    color: hsl(359, 67%, 44%);
+}
+
+.best_choise_head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: hsl(0, 0%, 14%);
+
+}
+.best_choise_head img {
+    width: 70px;
+    height: 32px;
+}
+.best_choise_head p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: 	hsl(0, 0%, 31%);
+}
+
+.best_choise_products{
+    display: flex;
+    flex-direction: column;
+}
+
+.product_article {
+    width: 90%;
+    height: 550px;
+    border-style: solid;
+    border-color: hsl(33, 48%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.product_img {
+    width: 90%;
+    height: 90%;
+}
+
+.product_name a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(0, 0%, 45%);
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px auto;
+}
+
+.product_price {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(359, 67%, 44%);
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.produtc_btn {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(359, 67%, 44%);
+    width: 125px;
+    height: 45px;
+    border-style: solid;
+    border-color: hsl(359, 67%, 44%);
+    background-color: transparent;
+    margin: 10px auto;
+
+
+}
+
+.produtc_btn:hover {
+    color: hsl(33, 48%, 95%);
+    background-color: hsl(359, 67%, 44%);
+    
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 761px){
+
+    .best_choise_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .best_choise_head{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+  
+}
+
+@media (min-width: 990px){
+    .best_choise_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .product_article{
+        height: 400px;
+    }
+
+}
