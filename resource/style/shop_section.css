@@ -35,11 +35,10 @@
     color: 	hsl(0, 0%, 31%);
     
 }
+
 .shop_tab{
-    margin-top: 25px;
-
+    padding-top: 20px;
 }
-
 
 
 input , .tab_content {
@@ -87,9 +86,64 @@ input:checked + label {
 
 
 @media (min-width: 761px){
+    .interior_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wreaths_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .christmas_balls_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stockings_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }
 
 @media (min-width: 990px){
+    .interior_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .wreaths_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .christmas_balls_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .stockings_products{
+        margin-top: 25px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
+    .product_article{
+        height: 400px;
+    }
 }

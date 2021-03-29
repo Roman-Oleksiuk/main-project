@@ -127,7 +127,7 @@ const stockingsProductsJSON = `
 ]`
 
 
-function renderProducts(interiorProducts) {
+function renderInteriorProducts(interiorProducts) {
     const productsContainer = document.querySelector('.interior_products');
     for (const intProduct of interiorProducts) {
         productsContainer.innerHTML += `
@@ -140,8 +140,9 @@ function renderProducts(interiorProducts) {
     }
     
 }
+renderInteriorProducts(JSON.parse(interiorProductsJSON));
 
-function renderProducts( wreathsProducts ) {
+function renderWreathsProducts( wreathsProducts ) {
     const productsContainer = document.querySelector('.wreaths_products');
     for (const wrProduct of wreathsProducts) {
         productsContainer.innerHTML += `
@@ -155,7 +156,9 @@ function renderProducts( wreathsProducts ) {
     
     
 }
-function renderProducts(ballsProducts ) {
+renderWreathsProducts(JSON.parse(wreathsProductsJSON));
+
+function renderBallsProducts(ballsProducts ) {
     const productsContainer = document.querySelector('.christmas_balls_products');
     for (const blProduct of ballsProducts) {
         productsContainer.innerHTML += `
@@ -168,7 +171,9 @@ function renderProducts(ballsProducts ) {
     }
     
 }
-function renderProducts( stockingsProducts ) {
+renderBallsProducts(JSON.parse(ballsProductsJSON));
+
+function renderStockingsProducts( stockingsProducts ) {
     const productsContainer = document.querySelector('.stockings_products');
     for (const stProduct of stockingsProducts) {
         productsContainer.innerHTML += `
@@ -185,8 +190,9 @@ function renderProducts( stockingsProducts ) {
 
 }
 
-renderProducts(JSON.parse(interiorProductsJSON));
-renderProducts(JSON.parse(wreathsProductsJSON));
-renderProducts(JSON.parse(ballsProductsJSON));
-renderProducts(JSON.parse(stockingsProductsJSON));
+renderStockingsProducts(JSON.parse(stockingsProductsJSON));
+
+
+
+
 

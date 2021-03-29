@@ -318,12 +318,22 @@ body {
 /* Special offer section */
 .special_offer{
     background-image: url(../img/bgi_3.png);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .special_offer_text {
-    width: 570px;
-    height: 510px;
+    width: 80%;
+    margin: 55px auto;
+    padding: 20px;
     background-color:   hsl(0, 0%, 100%);
+
     
 }
 
@@ -350,6 +360,14 @@ body {
     color: 	hsl(0, 0%, 31%);
 }
 
+
+.sos_btn{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+
 .so_buttom_cu {
     width: 125px;
     height: 40px;
@@ -361,6 +379,14 @@ body {
     border-style: solid;
     text-decoration: none;
 }
+
+.so_buttom_cu:hover{
+    background-color:hsl(0, 0%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+
 
 
 
@@ -637,6 +663,14 @@ list-style-type: none;
 
     .footer_nav ul li{
        margin: 5px auto;
+    }
+
+    /* Special offer section */
+    .special_offer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        
     }
 
 
