@@ -45,7 +45,7 @@
             </nav>
         </div>
         <!-- The Modal -->
-        <div id="myNav" class="modal">
+        <div id="mainNav" class="modal">
             <!-- Modal content -->
             <div   class="modal-content">
                 <div class="modal_header">
@@ -159,38 +159,6 @@
             </div>
 
         </section>
-
-        <!--Testimonials section--> 
-        <!-- <section class="testimonials">
-            <div class="testimonials_head">
-                <span>Testimonials</span>
-                <h2>Our Happy Clients.</h2>
-                <img src="resource/img/symbol.svg"  width="200" height="50" alt="">
-                <p>These families have already found their piece of Christmas magic.</p>
-            </div>
-            <article class="testimonials_article">
-                <img src="resource/img/dean_and_alice.png" alt="dean_and_alice">
-                <h3>Dean and Alice Peterson</h3>
-                <div class="testimonials_underscore"></div>
-                <p>“Christmas is a special time! We always buy Christmas decorations in advance. For the third year now, we have been making orders in this store and are completely satisfied with the quality of each bauble purchased." </p>
-                <em>December 15, 2019</em>
-            </article>
-             <article class="testimonials_article">
-                <img src="resource/img/susan_owler.png" alt="susan_owler">
-                <h3>Susan Owler</h3>
-                <div class="testimonials_underscore"></div>
-                <p>“My daughter is 4 years old and she has been waiting for Christmas preparations since October! We start decorating the Christmas tree in early December, and I always buy something new at Christmas Decorations Shop.”</p>
-                <em>December 08, 2018</em>
-            </article>
-            <article class="testimonials_article">
-                <img src="resource/img/daniella_l.png" alt="daniella_l">
-                <h3>Daniella Lexington</h3>
-                <div class="testimonials_underscore"></div>
-                <p>“The anticipation of Christmas is the best thing in December. I like the feeling that magic is coming and try to start Christmas decorations in early December. This year, I've bought a new X-mas tree and lots of baubles.”</p>
-                <em>December 02, 2020</em>
-            </article>
-        </section> -->
-
         <!--Special offer section--> 
         <section class="special_offer">
             <div class="special_offer_text">
@@ -204,7 +172,6 @@
                 </div>
             </div>
         </section>
-
         <!--Shop section--> 
         <div id="shop">
             <div class="shop_head">
@@ -237,44 +204,8 @@
                 
             </div>
         </div>
-        <!--About decoration section-->
-        <!-- <section class="about_decoration_section">
-            <div class="about_decoration_aside">
-                <span class="title_kind">DECORATION</span>
-                <h3>How to Store and Clean Christmas Balls</h3>
-                <span class="signature">December 01, 2020 | by Erica White</span>
-            </div>
-            <article class="about_decoration_article">
-                <img src="resource/img/aboutdecoration_1.png" alt="">
-                <span class="title_kind">TIPS</span>
-                <h4>How to Beautifully Wrap Christmas Gifts</h4>
-                <p>You will find a huge selection of wrapping paper in our store. The most popular kinds are those with snowflakes, Santa Claus, deer. Plain craft paper is also gaining popularity, especially with contrast  shining bands. And now we will tell you how to wrap gifts like a pro.</p>
-                <div class="signature">December 03, 2020 | by Erica White</div>
-            </article>
-            <article class="about_decoration_article">
-                <img src="resource/img/aboutdecoration_2.png" alt="">
-                <span class="title_kind">DECORATION</span>
-                <h4>The Best Color Combinations for Your Christmas Tree</h4>
-                <p>We all want our Christmas tree to look like pictures from a fashion magazine. But when we start decorating it, it looks not as stylish as we want it to be. We asked several stylists about how to achieve the perfect Christmas look and create a New Year's interior you can be proud of.</p>
-                <div class="signature">December 02, 2020 | by Erica White</div>
-            </article>
-            <article class="about_decoration_article">
-                <img src="resource/img/dean_and_alice.png" alt="">
-                <span class="title_kind">TIPS</span>
-                <h4>Mission Possible: Buying Gifts for Everyone in One Place</h4>
-                <p>Christmas holidays are not only about decorations but also about buying presents literally for everyone. If you're going to celebrate with your family and/or friends, you'd better hurry up and start making up lists of presents. And yes, it's possible to buy everything in one place.</p>
-                <div class="signature">December 05, 2020 | by Helen White</div>
-            </article>
-        </section> -->
      
     </main>
-    <!--Contact us section--> 
-    <!-- <section class="contact_section">
-        <span>Contact us</span>
-        <h2>Fill out the Form or <br>
-        Call Us at <a href="tel:+12345678900">+1 (234) 567 89 00</a></h2>
-        <button class="contact_us_btn">Contact us</button>
-    </section> -->
     <!--FAQ section--> 
     <section id="faq">
          <div class="faq_head">
@@ -424,11 +355,70 @@
             </div>
         </div>
     </footer>
+     <!-- Modal Product Info -->
+     <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Cart -->
+      <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="alert-container"></div>
     <script src="resource/js/header_modal.js"></script>
     <script src="resource/js/accordion.js"></script>
     <script src="resource/js/aboutus.js"></script>
     <script src="resource/js/gallery.js"></script>
     <script src="resource/js/best_choise.js"></script>
     <script src="resource/js/shop_section.js"></script>
+    
 </body>
 </html>
